@@ -19,6 +19,12 @@ export default {
             spacing: {
                 128: "32rem",
             },
+            colors: {
+                'primary-green': '#5F7161',
+                'secondary-green': '#6D8B74',
+                'primary-beige': '#D0C9C0',
+                'secondary-beige': '#EFEAD8',
+            },
         },
     },
 
