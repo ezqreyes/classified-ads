@@ -12,11 +12,11 @@
         <a class="mr-5 hover:text-gray-800">Stores</a>
         <a class="mr-5 hover:text-gray-800">Contact</a>
         @guest
-          <a class="mr-5 hover:text-gray-800">Login</a>
-          <a class="mr-5 hover:text-gray-800">Register</a>  
+          <a class="mr-5 hover:text-gray-800" href="{{ route('login') }}">Login</a>
+          <a class="mr-5 hover:text-gray-800" href="{{ route('register') }}">Register</a>  
         @endguest
         @auth
-          <a class="mr-5 hover:text-gray-800">{{auth()->user()->name}}</a>
+          <a class="mr-5 hover:text-gray-800">{{ Auth::user()->name}}</a>
         @endauth
       </nav>
       <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-secondary-beige hover:text-gray-800 rounded text-base text-gray-200 font-semibold mt-4 md:mt-0">
