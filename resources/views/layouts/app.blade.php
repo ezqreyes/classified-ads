@@ -36,6 +36,10 @@
                             <x-app-link href="{{ route('categories.index')}}" :active="request()->routeIs('categories.index')">Categories</x-app-link>
                             <x-app-link href="{{ route('subcategories.index')}}" :active="request()->routeIs('subcategories.index')">Sub Categories</x-app-link>
                             <x-app-link href="{{ route('childcategories.index')}}" :active="request()->routeIs('childcategories.index')">Child Categories</x-app-link>
+                            <x-app-link href="{{ route('countries.index')}}" :active="request()->routeIs('countries.index')">Countries</x-app-link>
+                            <x-app-link href="{{ route('states.index')}}" :active="request()->routeIs('states.index')">States</x-app-link>
+                            <x-app-link href="{{ route('cities.index')}}" :active="request()->routeIs('cities.index')">Cities</x-app-link>
+
                             <div @click.away="open = false" class="relative" x-data="{ open: false }">
                                 <button @click="open = !open" 
                                     class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:block hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
