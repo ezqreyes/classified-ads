@@ -30,4 +30,4 @@ Route::middleware([
 });
 
 Route::resource('categories', CategoryController::class);
-Route::resource('categories', SubCategoryController::class);
+Route::resource('subcategories', SubCategoryController::class);
